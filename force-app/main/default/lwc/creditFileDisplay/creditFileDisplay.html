@@ -1,0 +1,16 @@
+<!--
+  @description       : 
+  @author            : 
+  @group             : 
+  @last modified on  : 04-01-2024
+  @last modified by  : 
+-->
+<template>
+    <template for:each={files} for:item="file">
+        <div key={file.Id} class="slds-m-around-medium" style="background: #0866AB;border:20px solid #0866AB">
+            <c-ca-preview-file-thumbnail-card key={file.Id} file={file} record-id={recordId}
+            thumbnail={file.thumbnailFileCard}>
+        </c-ca-preview-file-thumbnail-card>
+        </div>
+    </template>
+</template>
